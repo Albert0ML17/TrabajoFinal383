@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de registro - Mi web</title>
+</head>
+<body>
+<h1>Formulario de registro</h1> <!-- <h1> es utilizado para crear cabeceras de nivel 1 -->
+<form action="" method="get"> <!-- <form> representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web. "action" procesa la información enviada por medio del formulario. "method" es el método que utiliza el navegador para enviar el formulario. -->
+	<p> <!-- Crea un nuevo párrafo-->
+		Nombre: <input type="text" name="nombre" maxlength="50" /> 	<!-- <input> se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario. "text" es el tipo de control a mostrar. Su valor predeterminado es text, si no se especifica este atributo. "name" es el nombre del control, el cual es enviado con los datos del formulario. "maxlength" especifica el número máximo de caracteres (en puntos de código Unicode) que el usuario puede introducir. -->
+	</p>
+	<p>
+		Apellidos: <input type="text" name="apellido" maxlength="50" /	>
+	</p>
+	<p>
+		Sexo: <input type="radio" name="sexo" value="h" /> Hombre <input type="radio" name="sexo" value="m" /> Mujer <!-- El type "radio" corresponde al botón radio. Se usa el atributo "value" para para definir el valor que se enviará por este elemento. -->
+	</p>
+	<p>
+		Correo: <input type="text" name="correo" maxlength="100">
+	</p>
+	<p>
+		<input type="checkbox" name="info" checked="checked" /> Deseo recibir información sobre novedades y ofertas <!-- El type "checkbox" hace referencia a una casilla de selección. "checked='checked'" significa que la casilla de selección estará marcada por defecto.-->
+	</p>
+	<p>
+		<input type="checkbox" name="condiciones" /> Declaro haber leído y aceptar las condiciones generales del programa y la normativa de protección de datos
+	</p>
+	<p>
+		<input type="submit" value="Enviar" /> <!-- El type "submit" se utiliza para enviar el formulario. -->
+	</p>
+</form>
+</body>
+</html>	
